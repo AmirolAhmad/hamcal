@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap-sass'
 gem 'jquery-rails'
-# gem 'devise'
+# gem 'devise', github: 'plataformatec/devise', :branch => 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
