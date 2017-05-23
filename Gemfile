@@ -18,8 +18,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 # custom
-gem 'bootstrap-sass'
 gem 'devise'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass', '~> 4.7.0'
+gem 'friendly_id', '~> 5.1.0'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
