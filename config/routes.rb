@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
+  get "/dashboard" => "dashboard#index"
 
   devise_for :users, path: 'auth', controllers: {
     sessions: 'users/sessions',
