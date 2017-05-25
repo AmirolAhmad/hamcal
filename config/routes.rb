@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'home#index'
   get "/dashboard" => "dashboard#index"
 
@@ -9,4 +10,10 @@ Rails.application.routes.draw do
     passwords: 'users/passwords',
     unlocks: 'users/unlocks'
   }
+
+  namespace :api do
+    namespace :v1 do
+      post 'user_token' => 'user_token#create'
+    end
+  end
 end

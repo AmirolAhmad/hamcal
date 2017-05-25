@@ -12,6 +12,22 @@ class User < ApplicationRecord
   }
   validate :validate_callsign
 
+  # jwt api start
+  def to_token_payload
+    {
+      sub: id,
+      callsign: callsign,
+      email: email
+    }
+  end
+
+  # make knock jwt compatible with devise
+  alias_method :authenticate, :valid_password?
+  def self.from_token_payload payload
+    self.find payload["sub"]
+  end
+  # jwt api end
+
   def validate_callsign
     if User.where(email: callsign).exists?
       errors.add(:callsign, :invalid)

@@ -22,6 +22,7 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass', '~> 4.7.0'
 gem 'friendly_id', '~> 5.1.0'
+gem 'knock'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
