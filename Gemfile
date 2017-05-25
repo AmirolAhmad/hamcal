@@ -30,6 +30,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener'
   gem 'rubycritic', require: false
+  gem 'traceroute'
 end
 
 group :development, :test do

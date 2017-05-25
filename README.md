@@ -5,3 +5,6 @@
 
 #### check code quality
   + run `$ rubycritic`
+
+#### check unused route path
+  + run `$ rake traceroute`
